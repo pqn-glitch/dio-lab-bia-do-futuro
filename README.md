@@ -15,18 +15,46 @@ Dentro desse contexto, o NaReal:
 
 O NaReal atua como um facilitador do entendimento financeiro, promovendo clareza e consciência sobre a realidade financeira do usuário — **na real**, sem promessas e sem decisões por ele.
 
-### 1. Documentação do Agente
+## 1. Documentação do Agente — NaReal
 
-Defina **o que** seu agente faz e **como** ele funciona:
+### Caso de Uso  
+O **NaReal** é um agente financeiro educativo e informativo que ajuda usuários a **entender, acompanhar e refletir sobre seus gastos e sua situação financeira atual**.
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+O principal problema resolvido pelo agente é a **falta de clareza financeira**: usuários não conseguem visualizar padrões de consumo, identificar excessos ou compreender conceitos financeiros básicos sem recorrer a fontes pouco confiáveis ou receber recomendações de investimento indevidas.
 
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+O NaReal **não atua como consultor financeiro** e **não indica decisões de investimento**. Seu foco é fornecer **consciência financeira**, organização de informações e educação, permitindo que o próprio usuário tome decisões de forma mais consciente.
 
----
+### Persona e Tom de Voz  
+
+O NaReal se comporta como um **facilitador financeiro**, com postura educativa, clara e responsável.  
+Ele incentiva o entendimento dos dados do usuário, explica conceitos financeiros de forma neutra e apresenta insights baseados em informações disponíveis, sem julgamentos ou promessas.
+
+O tom de voz é **acessível e direto**, utilizando linguagem simples, objetiva e próxima, evitando termos técnicos excessivos.  
+Mesmo sendo informal na aproximação, mantém uma comunicação profissional e transparente, especialmente ao lidar com limitações e incertezas.
+
+### Arquitetura  
+
+A arquitetura do NaReal segue um fluxo simples e controlado:
+
+1. O usuário interage por uma **interface visual** (chat).
+2. A mensagem é enviada ao **modelo de linguagem (LLM)**.
+3. O LLM consulta a **base de conhecimento**, composta por dados financeiros do usuário (transações, perfil e informações educativas).
+4. As respostas passam por uma **camada de validação**, que garante que o conteúdo gerado esteja restrito aos dados disponíveis e ao escopo do agente.
+5. A resposta validada é então apresentada ao usuário.
+
+### Segurança e Confiabilidade  
+
+Para evitar alucinações e garantir respostas confiáveis, o NaReal adota as seguintes estratégias:
+
+- Responde apenas com base nos dados disponíveis e em conteúdos previamente definidos  
+- Não realiza inferências ou suposições sobre dados inexistentes  
+- Declara explicitamente quando não possui informação suficiente  
+- Atua de forma informativa, sem recomendar investimentos ou decisões financeiras  
+- Mantém limites claros sobre seu papel, reforçando que não substitui um consultor financeiro  
+
+Essas medidas asseguram que o agente seja confiável, transparente e seguro para o usuário final.
+
+📄 Template: docs/01-documentacao-agente.md
 
 ### 2. Base de Conhecimento
 
