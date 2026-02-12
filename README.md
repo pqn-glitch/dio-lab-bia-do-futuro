@@ -54,7 +54,9 @@ Para evitar alucinações e garantir respostas confiáveis, o NaReal adota as se
 
 Essas medidas asseguram que o agente seja confiável, transparente e seguro para o usuário final.
 
-📄 Template: docs/01-documentacao-agente.md
+📄 **Documentação detalhada disponível em:**  
+[`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+
 
 ### 2. Base de Conhecimento
 
