@@ -55,7 +55,7 @@ O agente mantém uma postura profissional, porém próxima, transmitindo confian
 
 ### Diagrama
 
-'''mermaid
+```mermaid
 flowchart TD
     A[Usuário] --> B[Interface Visual]
     B --> C[LLM]
@@ -63,7 +63,7 @@ flowchart TD
     D --> C
     C --> E[Validação]
     E --> F[Resposta]
-
+```
 
 ### Componentes
 
