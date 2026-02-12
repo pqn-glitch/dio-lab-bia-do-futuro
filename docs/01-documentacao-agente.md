@@ -5,41 +5,51 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Usuários têm dificuldade em acompanhar seus gastos, entender para onde o dinheiro está indo e compreender sua situação financeira atual. Além disso, muitas pessoas possuem dúvidas sobre conceitos financeiros e tipos de investimentos, mas não sabem onde buscar informações confiáveis sem receber recomendações ou promessas irreais.
+
+Essa falta de clareza dificulta o controle financeiro e a tomada de decisões mais conscientes no dia a dia.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+O **NaReal** analisa dados financeiros do usuário, como histórico de transações e perfil, para apresentar informações claras sobre gastos, padrões de consumo e situação financeira atual.  
+
+De forma proativa, o agente identifica recorrências, variações fora do padrão e pontos de atenção, trazendo insights ao usuário mesmo sem uma pergunta direta.  
+
+Além disso, o NaReal atua como um agente educativo, explicando conceitos financeiros e tipos de investimentos de maneira informativa, sem realizar consultoria ou indicar decisões financeiras específicas.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
-
----
+- Pessoas que desejam organizar melhor seus gastos pessoais  
+- Usuários que buscam maior consciência financeira  
+- Iniciantes em educação financeira  
+- Clientes que querem entender conceitos financeiros sem receber recomendações de investimento  
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+NaReal
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+O NaReal possui uma personalidade **educativa, clara e responsável**.  
+Ele atua como um facilitador do entendimento financeiro, ajudando o usuário a interpretar seus próprios dados e refletir sobre seus hábitos, sem assumir o papel de consultor ou tomador de decisão.
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+O tom de comunicação é **acessível e direto**, com linguagem simples e objetiva, evitando jargões técnicos excessivos.  
+O agente mantém uma postura profissional, porém próxima, transmitindo confiança e clareza.
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
-
----
+- **Saudação:**  
+  “Olá! Vamos dar uma olhada na sua situação financeira atual?”
+- **Confirmação:**  
+  “Entendi. Vou analisar seus dados para te mostrar isso de forma clara.”
+- **Erro/Limitação:**  
+  “Não encontrei informações suficientes para responder com segurança, mas posso explicar esse conceito de forma geral.”
 
 ## Arquitetura
 
@@ -47,35 +57,18 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Usuário] --> B[Interface Visual]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
     C --> E[Validação]
     E --> F[Resposta]
-```
 
 ### Componentes
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
-
----
-
-## Segurança e Anti-Alucinação
-
-### Estratégias Adotadas
-
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
-
-### Limitações Declaradas
-> O que o agente NÃO faz?
-
-[Liste aqui as limitações explícitas do agente]
+| Interface | Chat interativo desenvolvido em Streamlit |
+| LLM | Modelo de linguagem integrado via API |
+| Base de Conhecimento | Dados mockados em CSV e JSON (transações, perfil e produtos financeiros) |
+| Validação | Camada de controle para limitar respostas aos dados disponíveis e evitar alucinações |

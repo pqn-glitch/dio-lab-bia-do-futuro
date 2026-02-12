@@ -1,20 +1,19 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 Agente Financeiro Pessoal Proativo para Organização Financeira e Metas
 
 ## Contexto
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+O **NaReal** é um agente financeiro inteligente criado para apoiar usuários no entendimento e acompanhamento da sua vida financeira cotidiana. Diferente de assistentes reativos, o NaReal atua de forma contextual, utilizando dados financeiros do próprio usuário para oferecer informações claras, relevantes e responsáveis.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+O agente é projetado para atuar de maneira **educativa e ética**, ajudando o usuário a compreender sua situação financeira atual, sem realizar consultoria ou recomendar decisões de investimento.
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+Dentro desse contexto, o NaReal:
 
----
+- **Antecipará necessidades do usuário** ao identificar padrões de gastos, recorrências e variações no histórico financeiro, apresentando alertas e insights antes mesmo de uma solicitação direta.
+- **Utilizará o contexto financeiro do usuário** — como histórico de transações e perfil — para personalizar explicações e informações, mantendo sempre uma abordagem informativa.
+- **Apoiará a construção de soluções financeiras conscientes**, auxiliando o usuário a refletir sobre hábitos de consumo e objetivos, sem indicar escolhas “melhores” ou “piores”.
+- **Garantirá segurança e confiabilidade nas respostas**, limitando-se estritamente aos dados disponíveis e deixando claras suas limitações, evitando alucinações e interpretações indevidas.
 
-## O Que Você Deve Entregar
+O NaReal atua como um facilitador do entendimento financeiro, promovendo clareza e consciência sobre a realidade financeira do usuário — **na real**, sem promessas e sem decisões por ele.
 
 ### 1. Documentação do Agente
 
