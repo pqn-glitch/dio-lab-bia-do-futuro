@@ -55,7 +55,7 @@ O agente mantém uma postura profissional, porém próxima, transmitindo confian
 
 ### Diagrama
 
-```mermaid
+'''mermaid
 flowchart TD
     A[Usuário] --> B[Interface Visual]
     B --> C[LLM]
@@ -64,11 +64,35 @@ flowchart TD
     C --> E[Validação]
     E --> F[Resposta]
 
+
 ### Componentes
 
-| Componente | Descrição |
-|------------|-----------|
-| Interface | Chat interativo desenvolvido em Streamlit |
-| LLM | Modelo de linguagem integrado via API |
-| Base de Conhecimento | Dados mockados em CSV e JSON (transações, perfil e produtos financeiros) |
-| Validação | Camada de controle para limitar respostas aos dados disponíveis e evitar alucinações |
+| Componente           | Descrição                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| Interface            | Chat interativo desenvolvido em Streamlit                                            |
+| LLM                  | Modelo de linguagem integrado via API                                                |
+| Base de Conhecimento | Dados mockados em CSV e JSON (transações, perfil e produtos financeiros)             |
+| Validação            | Camada de controle para limitar respostas aos dados disponíveis e evitar alucinações |
+
+
+## Segurança e Anti-Alucinação
+
+### Estratégias Adotadas
+
+- O agente responde **exclusivamente com base nos dados fornecidos** na Base de Conhecimento (ex: transações, perfil financeiro e produtos simulados).
+- Quando a pergunta do usuário extrapola os dados disponíveis, o NaReal **limita a resposta a explicações conceituais gerais**, sem inferir informações inexistentes.
+- As respostas priorizam **clareza e rastreabilidade**, deixando explícito quando a informação vem dos dados do usuário ou quando é uma explicação educativa.
+- Quando não há dados suficientes para uma resposta segura, o agente **admite a limitação** e orienta o usuário de forma transparente.
+- O NaReal **não realiza recomendações de investimento personalizadas**, especialmente na ausência de um perfil completo do usuário.
+- Existe uma camada de **validação de contexto**, que impede respostas fora do domínio financeiro definido para o agente.
+
+### Limitações Declaradas
+
+#### O que o agente NÃO faz?
+
+- Não fornece **consultoria financeira ou investimentos personalizados**.
+- Não indica compra, venda ou alocação de ativos financeiros.
+- Não toma decisões financeiras pelo usuário.
+- Não utiliza dados externos em tempo real (ex: cotações atualizadas, mercado financeiro ao vivo).
+- Não acessa contas bancárias reais ou informações sensíveis.
+- Não responde perguntas fora do escopo de educação financeira e análise dos dados fornecidos.
