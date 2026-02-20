@@ -50,7 +50,7 @@ Para evitar alucinações e garantir confiabilidade:
 - Mantém o escopo restrito a organização alimentar, estrutura de treino e hábitos saudáveis.
 - Reforça que não substitui profissionais da saúde.
 
-📄 Template: `docs/01-documentacao-agente.md`
+📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md).
 
 
 ### 2. Base de Conhecimento
@@ -68,5 +68,69 @@ Arquivos Utilizados
 | planos_treino.json        | JSON    | Estrutura de treinos disponíveis e variações          |
 | base_nutricional.json     | JSON    | Base simplificada de alimentos e valores nutricionais |
 
-📄 **Template:** `data`
+📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md).
 
+### 3. Prompts do Agente
+
+Os prompts definem o comportamento, as regras e os limites de atuação do Corpo&Mente.  
+Eles garantem consistência, segurança e alinhamento com o objetivo do usuário.
+
+---
+
+### System Prompt
+
+O System Prompt estabelece:
+
+- O papel do agente como assistente especializado em saúde, alimentação e treino.
+- A obrigação de utilizar apenas os dados disponíveis na base interna.
+- A proibição de inventar informações ou extrapolar o escopo.
+- A restrição de não realizar diagnósticos médicos ou prescrever medicamentos.
+- A exigência de justificar recomendações com base no histórico do usuário.
+
+Também define o tom de comunicação:
+
+- Motivador e equilibrado.
+- Claro e didático.
+- Profissional e acessível.
+- Focado em progresso sustentável.
+
+Essa estrutura reduz alucinações e aumenta previsibilidade nas respostas.
+
+---
+
+### Exemplos de Interação
+
+A documentação inclui cenários simulados com:
+
+- Contexto do usuário.
+- Pergunta realizada.
+- Resposta ideal esperada do agente.
+
+Os exemplos seguem a técnica de *Few-Shot Prompting*, orientando o modelo a:
+
+- Manter padrão de resposta estruturado.
+- Justificar recomendações com base em dados.
+- Recusar solicitações fora do escopo.
+- Solicitar informações adicionais quando necessário.
+
+Isso melhora a robustez e a coerência das interações.
+
+---
+
+### Tratamento de Edge Cases
+
+O agente possui diretrizes claras para situações limite:
+
+- Perguntas fora do escopo são redirecionadas educadamente.
+- Solicitações de informações sensíveis são recusadas.
+- Pedidos médicos ou clínicos são bloqueados.
+- Recomendações sem contexto exigem coleta adicional de dados.
+
+Esse tratamento garante:
+
+- Segurança do usuário.
+- Proteção de dados.
+- Conformidade ética.
+- Controle rigoroso do escopo de atuação.
+
+📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
