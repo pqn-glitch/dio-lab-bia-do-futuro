@@ -1,0 +1,23 @@
+{
+  "hipertrofia_4x_semana": {
+    "objetivo": "Hipertrofia e recomposição corporal",
+    "divisao": "A/B",
+    "frequencia": "4x por semana",
+    "treinos": {
+      "Treino A - Membros Superiores": [
+        {"exercicio": "Supino reto", "series": 4, "repeticoes": "8-10"},
+        {"exercicio": "Puxada na frente", "series": 4, "repeticoes": "8-10"},
+        {"exercicio": "Desenvolvimento com halteres", "series": 3, "repeticoes": "10-12"},
+        {"exercicio": "Rosca direta", "series": 3, "repeticoes": "10-12"},
+        {"exercicio": "Tríceps corda", "series": 3, "repeticoes": "10-12"}
+      ],
+      "Treino B - Membros Inferiores": [
+        {"exercicio": "Leg press", "series": 4, "repeticoes": "8-10"},
+        {"exercicio": "Cadeira extensora", "series": 3, "repeticoes": "12"},
+        {"exercicio": "Mesa flexora", "series": 3, "repeticoes": "12"},
+        {"exercicio": "Elevação pélvica", "series": 3, "repeticoes": "10-12"},
+        {"exercicio": "Panturrilha em pé", "series": 4, "repeticoes": "12-15"}
+      ]
+    }
+  }
+}

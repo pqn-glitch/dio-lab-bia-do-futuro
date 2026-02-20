@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nome": "Lucas Andrade",
+    "idade": 29,
+    "sexo": "Masculino",
+    "altura_cm": 178,
+    "peso_kg": 82,
+    "objetivo": "Recomposição corporal",
+    "nivel_atividade": "Intermediário",
+    "frequencia_treino_atual": "3x por semana",
+    "tempo_disponivel_treino_min": 60,
+    "rotina_trabalho": "Sedentário (trabalho em escritório)",
+    "horas_sono_media": 6,
+    "preferencias_alimentares": [
+      "Arroz",
+      "Frango",
+      "Ovos",
+      "Carne vermelha",
+      "Legumes"
+    ],
+    "restricoes_alimentares": [],
+    "consumo_agua_litros_dia": 1.8,
+    "historico_saude": [
+      "Sem doenças crônicas",
+      "Leve dor lombar ocasional"
+    ],
+    "observacoes": "Deseja reduzir gordura abdominal e ganhar definição muscular mantendo energia no dia a dia."
+  }
+]

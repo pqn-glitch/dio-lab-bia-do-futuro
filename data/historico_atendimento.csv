@@ -1,6 +1,8 @@
 data,canal,tema,resumo,resolvido
-2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
-2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
-2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
-2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
-2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+2025-09-10,chat,Plano alimentar,Usuário solicitou ajuste nas quantidades de proteína para recomposição corporal,sim
+2025-09-18,chat,Treino de pernas,Relatou dor lombar após agachamento; treino foi adaptado para menor sobrecarga,sim
+2025-09-25,chat,Hidratação,Usuário recebeu orientação para aumentar ingestão de água para 2.5L/dia,sim
+2025-10-02,chat,Sono,Relatou cansaço frequente; recebeu orientação sobre rotina de sono e recuperação,sim
+2025-10-10,chat,Acompanhamento semanal,Avaliação de progresso mostrou leve redução de gordura abdominal,sim
+2025-10-18,email,Ajuste de treino,Treino reorganizado para 4x por semana conforme nova disponibilidade,sim
+2025-10-28,chat,Platô de peso,Usuário relatou estagnação; ajustes calóricos moderados foram sugeridos,sim

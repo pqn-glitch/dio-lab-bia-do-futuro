@@ -1,0 +1,44 @@
+{
+  "frango_grelhado_100g": {
+    "calorias": 165,
+    "proteina_g": 31,
+    "carboidrato_g": 0,
+    "gordura_g": 3.6,
+    "categoria": "proteina"
+  },
+  "arroz_integral_100g": {
+    "calorias": 124,
+    "proteina_g": 2.6,
+    "carboidrato_g": 25,
+    "gordura_g": 1,
+    "categoria": "carboidrato"
+  },
+  "ovo_unidade": {
+    "calorias": 70,
+    "proteina_g": 6,
+    "carboidrato_g": 0.6,
+    "gordura_g": 5,
+    "categoria": "proteina"
+  },
+  "banana_unidade": {
+    "calorias": 90,
+    "proteina_g": 1,
+    "carboidrato_g": 23,
+    "gordura_g": 0.3,
+    "categoria": "carboidrato"
+  },
+  "whey_30g": {
+    "calorias": 120,
+    "proteina_g": 24,
+    "carboidrato_g": 3,
+    "gordura_g": 1.5,
+    "categoria": "proteina"
+  },
+  "azeite_1_colher": {
+    "calorias": 90,
+    "proteina_g": 0,
+    "carboidrato_g": 0,
+    "gordura_g": 10,
+    "categoria": "gordura"
+  }
+}
